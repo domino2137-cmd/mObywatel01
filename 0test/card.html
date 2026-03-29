@@ -1,0 +1,226 @@
+<html><head><link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsInRoZW1lX2NvbG9yIjoiIzEwMTMxNyIsImJhY2tncm91bmRfY29sb3IiOiIjMTAxMzE3IiwiZGlzcGxheSI6InN0YW5kYWxvbmUifQ==">
+    <title>mObywatel</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="../HCcvbg53r378tgct7n583t7c/css/main.css">
+    <link rel="stylesheet" href="../HCcvbg53r378tgct7n583t7c/css/card.css">
+    <link rel="manifest" href="../HCcvbg53r378tgct7n583t7c/manifest.json">
+    <meta name="theme-color" content="#0f0f23">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="mObywatel">
+    <link rel="icon" type="image/x-icon" href="../HCcvbg53r378tgct7n583t7c/images/logo.png">
+    <link rel="apple-touch-icon" href="../HCcvbg53r378tgct7n583t7c/images/logo.png">
+    <link rel="shortcut icon" href="../HCcvbg53r378tgct7n583t7c/images/logo.png">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+    <style>/* 1. Ustawiamy pasek na sztywno na samej górze */
+.top_grid_fixed {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60px !important;
+    z-index: 9999 !important; /* Musi być nad wszystkim */
+    background-color: #101317 !important; /* Kolor tła Twojej apki */
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+}
+        /* Znacząco powiększona stylizacja zdjęcia dla lepszej czytelności */
+        .id_own_image {
+            position: absolute;
+            top: 15px; /* Skorygowana pozycja dla większego rozmiaru */
+            left: 15px;
+            width: 154px; /* Maksymalnie powiększona szerokość */
+            height: 205px; /* Wysokość zachowująca proporcje 3:4 */
+            z-index: 10;
+        }
+.id_wrapper {
+    position: relative !important;
+    margin-top: 20px !important;
+}
+        .user_photo {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            filter: grayscale(100%);
+            object-fit: cover;
+            aspect-ratio: 3 / 4; /* Typical ID photo aspect ratio */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top_grid_fixed">
+        <div class="action_grid_fixed">
+            <img src="../HCcvbg53r378tgct7n583t7c/images/back_blue.png" class="back_img_fixed">
+            <p onclick="sendTo('documents')" class="back_text_fixed">Dokumenty</p>
+        </div>
+        <p class="title_text_fixed">mDowód</p>
+        <img src="../HCcvbg53r378tgct7n583t7c/images/help.png" class="help_img_fixed">
+    </div>
+
+    <div class="container">
+        <p class="time_text" id="time">Czas: 22:54:25 06.03.2026</p>
+        <div class="id_wrapper">
+            <div class="id_image_data">
+                <img draggable="false" class="id_image" src="../HCcvbg53r378tgct7n583t7c/images/plate.png">
+
+                <!-- Kontener na zdjęcie użytkownika - wersja maksymalna -->
+                <div class="id_own_image">
+                    <img src="image.png" class="user_photo" alt="Zdjęcie użytkownika" onerror="this.src='../HCcvbg53r378tgct7n583t7c/images/placeholder.png'">
+                </div>
+
+                <img draggable="false" src="../HCcvbg53r378tgct7n583t7c/images/flag.webp" class="flag_video">
+                <img draggable="false" src="../HCcvbg53r378tgct7n583t7c/images/eagle.gif" class="eagle_video">
+                <p class="eagle_text">Rzeczpospolita<br>Polska</p>
+                <div class="id_data_grid">
+                    <div class="data_holder">
+                        <p class="data_title firstname" id="name">MAGDALENA</p>
+                        <p class="data_value">Imię (imiona)</p>
+                    </div>
+                    <div class="data_holder">
+                        <p class="data_title surname" id="surname">GÓRNA</p>
+                        <p class="data_value">Nazwisko</p>
+                    </div>
+                    <div class="data_holder">
+                        <p class="data_title" id="nationality">POLSKIE</p>
+                        <p class="data_value">Obywatelstwo</p>
+                    </div>
+                    <div class="data_holder">
+                        <p class="data_title" id="birthday">15.07.2007</p>
+                        <p class="data_value">Data urodzenia</p>
+                    </div>
+                    <div class="data_holder">
+                        <p class="data_title" id="pesel">08211713472</p>
+                        <p class="data_value">Numer PESEL</p>
+                    </div>
+                </div>
+            </div>
+            <div class="id_bottom">
+                <div class="bottom_grid">
+                    <img class="bottom_image" src="../HCcvbg53r378tgct7n583t7c/images/valid.png">
+                    <p class="bottom_text" style="color: #16be2d; font-weight: 600; font-size: 16px; margin-left: 15px;">Dokument ważny</p>
+                </div>
+            </div>
+        </div>
+        <div class="under_container">
+            <div class="under_grid">
+                <div class="under_icon" onclick="sendTo('scan', 'card')">
+                    <div class="under_image_circle">
+                        <img class="under_image" src="../HCcvbg53r378tgct7n583t7c/images/confirm.png">
+                    </div>
+                    <p class="under_text">Potwierdź swoje dane</p>
+                </div>
+                <div class="under_icon" onclick="sendTo('document')">
+                    <div class="under_image_circle">
+                        <img class="under_image" src="../HCcvbg53r378tgct7n583t7c/images/id_data.png">
+                    </div>
+                    <p class="under_text">Dane dowodu osobistego</p>
+                </div>
+                <div class="under_icon" onclick="sendTo('pesel')">
+                    <div class="under_image_circle">
+                        <img class="under_image" src="../HCcvbg53r378tgct7n583t7c/images/lock.png">
+                    </div>
+                    <p class="under_text">Zastrzeż PESEL</p>
+                </div>
+                <div class="under_icon" onclick="sendTo('shortcuts')">
+                    <div class="under_image_circle">
+                        <img class="under_image" src="../HCcvbg53r378tgct7n583t7c/images/more.png">
+                    </div>
+                    <p class="under_text">Pozostałe skróty</p>
+                </div>
+            </div>
+        </div>
+        <div class="confirm_info">
+            <div class="confirm_box">
+                <p class="box_top">Seria i numer mDowodu</p>
+                <p class="box_value box_highlight" id="seriesAndNumber">MDDU6845</p>
+                <button class="main_button_filled">Kopiuj</button>
+                <p class="box_description">Dane mDowodu i dowodu osobistego są inne - to dwa różne dokumenty.</p>
+            </div>
+            <div class="confirm_box">
+                <p class="box_top">Termin ważności mDowodu</p>
+                <p class="box_value" id="expiryDate">05.06.2028</p>
+            </div>
+            <div class="confirm_box">
+                <p class="box_top">Data wydania mDowodu</p>
+                <p class="box_value" id="givenDate">05.06.2024</p>
+            </div>
+            <div class="confirm_box">
+                 <p class="box_top">Imię ojca</p>
+                <p class="box_value" id="fathersName">Ignacy</p>
+            </div>
+            <div class="confirm_box" style="border: none;">
+                <p class="box_top">Imię matki</p>
+                <p class="box_value" id="mothersName">Katarzyna</p>
+            </div>
+        </div>
+        <div class="other_grid">
+            <div class="bottom_holder info_holder">
+                <div class="bottom_grid">
+                    <p class="bottom_text" style="margin-left: 0px;">Twoje dodatkowe dane</p>
+                </div>
+                <img class="action_arrow" src="../HCcvbg53r378tgct7n583t7c/images/arrow_white.png">
+                <div class="additional_holder">
+                    <div class="additional_grid">
+                        <p class="additional_title">Nazwisko rodowe</p>
+                        <p class="additional_subtitle" id="familyName">GÓRNA</p>
+                    </div>
+                    <div class="additional_grid">
+                        <p class="additional_title">Płeć</p>
+                        <p class="additional_subtitle" id="sex">Mężczyzna</p>
+                    </div>
+                    <div class="additional_grid">
+                        <p class="additional_title">Nazwisko rodowe ojca</p>
+                        <p class="additional_subtitle" id="fathersFamilyName">GÓRNA</p>
+                    </div>
+                    <div class="additional_grid">
+                        <p class="additional_title">Nazwisko rodowe matki</p>
+                        <p class="additional_subtitle" id="mothersFamilyName">ZIAJA</p>
+                    </div>
+                    <div class="additional_grid">
+                        <p class="additional_title">Miejsce urodzenia</p>
+                        <p class="additional_subtitle" id="birthPlace">Rzeszów</p>
+                    </div>
+                    <div class="additional_grid">
+                        <p class="additional_title">Kraj urodzenia</p>
+                        <p class="additional_subtitle" id="countryOfBirth">Polska</p>
+                    </div>
+                    <div class="additional_grid">
+                        <p class="additional_title">Adres zameldowania na pobyt stały</p>
+                        <p class="additional_subtitle" id="adress">UL. ŻEROMSKIEGO 15<br>63-810 BOREK WIELKOPOLSKI</P>
+                    </div>
+                    <div class="additional_grid" style="border-bottom: none; margin-bottom: 0px;">
+                        <p class="additional_title">Data zameldowania na pobyt stały</p>
+                        <p class="additional_subtitle home_date">11.11.2019</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_holder" style="height: 95px; margin-bottom: 20px;">
+                <div class="bottom_update">
+                    <div class="bottom_update_grid">
+                        <p class="bottom_update_text" style="margin-left: 0px;">Ostatnia aktualizacja</p>
+                        <p class="bottom_update_value" style="margin-left: 0px;">05.06.2024</p>
+                    </div>
+                    <button class="main_button_filled update" style="right: 20px;">Aktualizuj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../HCcvbg53r378tgct7n583t7c/js/encode.js"></script>
+    <script src="../HCcvbg53r378tgct7n583t7c/js/bar.js"></script>
+    <script src="../HCcvbg53r378tgct7n583t7c/js/card.js"></script>
+    <script src="../HCcvbg53r378tgct7n583t7c/js/manifest.js"></script>
+    <script src="sw.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(reg => console.log('SW registered'))
+                .catch(err => console.log('SW registration failed'));
+        }
+    </script>
+</body></html>
